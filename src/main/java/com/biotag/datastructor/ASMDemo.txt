@@ -1,0 +1,85 @@
+Classfile /E:/idea_workspace/CodeTestDemo/src/main/java/com/biotag/datastructor/ASMDemo.class
+  Last modified 2020-5-25; size 476 bytes
+  MD5 checksum de8f6b1c0ad595aa53d1b30cd0e1aafc
+  Compiled from "ASMDemo.java"
+public class com.biotag.datastructor.ASMDemo
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#15         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #16.#17        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Methodref          #18.#19        // java/io/PrintStream.println:(I)V
+   #4 = Class              #20            // com/biotag/datastructor/ASMDemo
+   #5 = Class              #21            // java/lang/Object
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = Utf8               Code
+   #9 = Utf8               LineNumberTable
+  #10 = Utf8               main
+  #11 = Utf8               ([Ljava/lang/String;)V
+  #12 = Utf8               StackMapTable
+  #13 = Utf8               SourceFile
+  #14 = Utf8               ASMDemo.java
+  #15 = NameAndType        #6:#7          // "<init>":()V
+  #16 = Class              #22            // java/lang/System
+  #17 = NameAndType        #23:#24        // out:Ljava/io/PrintStream;
+  #18 = Class              #25            // java/io/PrintStream
+  #19 = NameAndType        #26:#27        // println:(I)V
+  #20 = Utf8               com/biotag/datastructor/ASMDemo
+  #21 = Utf8               java/lang/Object
+  #22 = Utf8               java/lang/System
+  #23 = Utf8               out
+  #24 = Utf8               Ljava/io/PrintStream;
+  #25 = Utf8               java/io/PrintStream
+  #26 = Utf8               println
+  #27 = Utf8               (I)V
+{
+  public com.biotag.datastructor.ASMDemo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iconst_0
+         3: istore_2
+         4: iload_2
+         5: bipush        101
+         7: if_icmpge     20
+        10: iload_1
+        11: iload_2
+        12: iadd
+        13: istore_1
+        14: iinc          2, 1
+        17: goto          4
+        20: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        23: iload_1
+        24: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        27: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 2
+        line 7: 10
+        line 6: 14
+        line 9: 20
+        line 10: 27
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 4
+          locals = [ int, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 15
+}
+SourceFile: "ASMDemo.java"
